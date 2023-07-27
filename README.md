@@ -1,48 +1,49 @@
 # ALFASOFT
-# Aplica��o de Gerenciamento de Contatos
+# Aplicação de Gerenciamento de Contatos
 
-Este ReadMe descreve como usar a aplica��o ASP.NET Core para gerenciamento de contatos. Essa aplica��o permite visualizar, adicionar, editar e excluir contatos.
+Este ReadMe descreve como usar a aplicação ASP.NET Core para gerenciamento de contatos. Essa aplicação permite visualizar, adicionar, editar e excluir contatos.
 
-## Pr�-requisitos
+## Pré-requisitos
 
 - [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [MariaDB](https://mariadb.org/) (ou MySQL)
 
-## Configura��o do Banco de Dados
+## Configuração do Banco de Dados
 
-1. Certifique-se de ter o MariaDB instalado em sua m�quina ou servidor.
+1. Certifique-se de ter o MariaDB instalado em sua máquina ou servidor.
 2. Crie um banco de dados chamado "ContactsDB" no MariaDB.
 
-## Configura��o da Conex�o com o Banco de Dados
+## Configuração da Conexão com o Banco de Dados
 
-1. No arquivo `appsettings.json`, ajuste a string de conex�o (`MariaDB`) para apontar para o banco de dados "ContactsDB" que voc� criou:
+1. No arquivo `appsettings.json`, ajuste a string de conexão (`MariaDB`) para apontar para o banco de dados "ContactsDB" que você criou:
 
 ```json
 "ConnectionStrings": {
   "MariaDB": "Server=localhost;Port=3306;Database=db;Uid=root;Pwd=root;"
 }
-Executando a Aplica��o
+Executando a Aplicação
 
     Abra um terminal na pasta do projeto onde se encontra o arquivo Program.cs.
-    Execute o seguinte comando para iniciar a aplica��o:
+    Execute o seguinte comando para iniciar a aplicação:
 dotnet run
 
-Acesse a aplica��o em um navegador web digitando o seguinte endere�o:
+Acesse a aplicação em um navegador web digitando o seguinte endereço:
 http://localhost:5000/
 
-Rotas da Aplica��o
+Rotas da Aplicação
 
     Listar Contatos (Index): http://localhost:5000/
-        Nesta p�gina, voc� encontrar� a lista de todos os contatos cadastrados.
+        Nesta página, você encontrará a lista de todos os contatos cadastrados.
 
     Detalhes do Contato (Details): http://localhost:5000/Details/
-        Nesta p�gina, voc� encontrar� informa��es detalhadas sobre o contato selecionado.
+        Nesta página, você encontrará informações detalhadas sobre o contato selecionado.
 
     Adicionar Contato (Create): http://localhost:5000/Create
-        Nesta p�gina, voc� poder� adicionar um novo contato preenchendo o formul�rio.
+        Nesta página, você poderá adicionar um novo contato preenchendo o formulário.
 
     Editar Contato (Edit): http://localhost:5000/Edit/
-        Nesta p�gina, voc� poder� editar as informa��es do contato selecionado.
+        Nesta página, você poderá editar as informações do contato selecionado.
 
     Excluir Contato (Delete): http://localhost:5000/Delete/
-        Nesta p�gina, voc� poder� confirmar a exclus�o do contato selecionado.
+        Nesta página, você poderá confirmar a exclusão do contato selecionado.
+

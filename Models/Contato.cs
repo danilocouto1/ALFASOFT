@@ -6,20 +6,6 @@ namespace ALFASOFT.Models
     [Table("Contato")]
     public class Contato
     {
-        public Contato() {
-            ID = 0;
-            Nome = "";
-            ContatoNumero = "";
-            Email = "";
-        }
-        public Contato(int iD, string nome, string contatoNumero, string email)
-        {
-            ID = iD;
-            Nome = nome;
-            ContatoNumero = contatoNumero;
-            Email = email;
-        }
-
         [Required]
         [Column("ID")]
         [Key]

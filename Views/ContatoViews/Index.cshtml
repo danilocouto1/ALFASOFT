@@ -1,0 +1,28 @@
+﻿@page
+@model ALFASOFT.Views.ContatoViews.Index
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.contato.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contato.ContatoNumero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contato.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+</table>

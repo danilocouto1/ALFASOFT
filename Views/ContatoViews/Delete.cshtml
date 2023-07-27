@@ -1,4 +1,5 @@
-﻿@model ALFASOFT.Models.Contato
+﻿@page "~/delete"
+@model ALFASOFT.Views.ContatoViews.Delete
 
 @{
     ViewData["Title"] = "Delete";
@@ -12,27 +13,27 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
+            @Html.DisplayNameFor(model => model.contato.Nome)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
+            @Html.DisplayFor(model => model.contato.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ContatoNumero)
+            @Html.DisplayNameFor(model => model.contato.ContatoNumero)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ContatoNumero)
+            @Html.DisplayFor(model => model.contato.ContatoNumero)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.contato.Email)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
+            @Html.DisplayFor(model => model.contato.Email)
         </dd>
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="ID" />
+        <input type="hidden" asp-for="contato.ID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>
